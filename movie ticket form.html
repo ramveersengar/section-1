@@ -1,50 +1,79 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> movie ticket booking form</title> 
-
-    <styl>
-    
-    </style>
+    <title>Document</title>
 </head>
 <body>
+    <title>movie ticket booking</title>
+    <link rel="stylesheet" href="movie.css">
 
-    <h1>Movie ticket booking site</h1>
-    <img src="army.jpg" alt="movie poster" width="200">
-     
-    <br>
-     
-    <h1 style="background-color: rgb(139, 130, 0);"> movie - border</h1>
-
-    <h2>genre: patriotic</h2>
-    <h2>release date= 13june1997</h2>
-    <h2>duration:3hour</h2>
-    <br>
-    <form >
-        <label >Name   .   .  </label>
-        <input type="text" placeholder="">
-        <br>
-        <label >email</label >
-            <input type="text"placeholder>
-            <br>
-            <li> <label > select time</label></li>
-            <select >
-                <option >11:00AM</option>
-                <option >02:00PM</option>
-            </select>
-
+    <header>
+        <nav>
             <ul>
-                <br>
-                <br>
-                <li><label>select number of seats</label></li>
-                <input placeholder="No of seats" type="text">
-            </ul>
-            <br>
-            <button style="background-color: brown;" type="book ticket"> submit</button>
-    </form>
+                <li><a href="#">home</a></li>
+                <li><a href="#">movies</a></li>
+                <li><a href="#">booking</a></li>
+                <li><a href="#">contact</a></li>
 
-    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero"></section>
+        <h1>Book your movie ticket</h1>
+        <p>get ready for an forgetable cinematic experience</p>
+        <button class="button"> book now</button>
+
+        </section>
+        <section class="movies"></section>
+        <h2>now showing</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="c:\Users\ramve\Downloads\devara pic.webp" alt="movie poster">
+
+                    <h3>devra lal sagar</h3>
+                    <p>action</p>
+                    <button class="button"> book tickets</button>
+                    
+                    
+
+                </div>
+
+            </div class="movie">
+            <img src="c:\Users\ramve\Downloads\salar.jpeg" alt="movie 2 poster">
+            <h3>salar</h3>
+            <p>fighting action old memory</p>
+            <button class="button"> book ticket</button> 
+
+            <section>
+                <section class="booking">
+                    <h2>book your tickets</h2>
+                    <form>
+                        <label for="show time">select show time</label>
+                        <select id="show time" name="show time"></select>
+                        <option value="10AM">10:00AM</option>
+                        <option value="1:00PM">1:00PM</option>
+
+                    </form>
+                    <label for="seats"> select no. of seats</label>
+                    <input type="number" id="seats" name="seats" min="1" max="10">
+                    <br>
+                    <button class="button"> book ticket</button>
+
+                                </section>
+            </section>
+
+        
+        
+
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 movie ticket booking website</p>
+
+    </footer>
+
 </body>
 </html>
