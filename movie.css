@@ -35,4 +35,31 @@ nav a:hover {
     color: #ccc;
 
 }
+.hero {
+    background-image: url();
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #156318;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+
+}
+
+.hero button {
+    background-color: #163006;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
