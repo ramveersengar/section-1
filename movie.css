@@ -60,6 +60,26 @@ nav a:hover {
     cursor: pointer;
 }
 
+.hero button.hover {
+    background-color: #3e8e41;
+
+}
+
+.movies {
+    padding: 40px;
+
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.movie-list {
+    justify-content: center;
+    
+}
+
 
 
 
