@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
 
 
     <style>
-        .hero-section{
+        .hero-section {}
 
-        }
-        .content{
-            border: 2px solid red;
+        .content {
+            /*border: 2px solid red;*/
             width: 80%;
             margin: 0 auto;
 
@@ -22,33 +24,187 @@
             justify-content: center;
             align-items: center;
 
-            height: 70vh;
+            height: 100vh;
         }
-        .hero-title{
+
+        .hero-title {
             font-size: 40px;
 
         }
-        .hero-subtitle{
+
+        .hero-subtitle {
             font-size: 20px;
+        }
+
+        .hero-btn {
+            padding: 10px 20px;
+            background-color: black;
+            color: blueviolet;
+            border: none;
+            font-size: 1.1em;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+
+        .hero-section {
+            background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/10/Wallpapers-HD-Forest.jpg);
+            color: black;
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .card {
+            /*border: 1px solid red;*/
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px 0 #00000069;
+            transition-duration: 0.3s;
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        .card:hover {
+            transform: translateY(-20px)
+        }
+
+        .card-img {
+            width: 100px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        footer {
+            padding: 40px 0;
+            background-color: purple;
+            color: white;
+        }
+
+        .website-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .website-links a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 
 
 </head>
+
 <body>
     <main>
         <article>
             <section class="hero-section">
                 <div class="content">
                     <h1 class="hero-title">welcome to our website</h1>
-                    <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem facere sunt nemo officia distinctio temporibus non obcaecati cupiditate ipsum praesentium? Rerum dolores omnis aliquam minus reprehenderit neque vero veritatis recusandae.
+                    <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem facere sunt
+                        nemo officia distinctio temporibus non obcaecati cupiditate ipsum praesentium? Rerum dolores
+                        omnis aliquam minus reprehenderit neque vero veritatis recusandae.
 
                     </p>
-                    <button class="hero-botton">Explore</button>
+                    <button class="hero-btn">Explore</button>
+                </div>
+
+            </section>
+            <section class="feature-section">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.0XMxhHtjMIWImFluHMq7dAAAAA&pid=Api&P=0&h=180"
+                            alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">feature title 1</h3>
+                            <p class="card-discription">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur fuga!
+                                Autem debitis id quas at eum consequatur? Debitis mollitia odio tenetur error aliquid
+                                dolor necessitatibus iusto ducimus quam est?
+
+                            </p>
+                            <button class="card-btn">learn more</button>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.0XMxhHtjMIWImFluHMq7dAAAAA&pid=Api&P=0&h=180"
+                            alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">feature title 1</h3>
+                            <p class="card-discription">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur fuga!
+                                Autem debitis id quas at eum consequatur? Debitis mollitia odio tenetur error aliquid
+                                dolor necessitatibus iusto ducimus quam est?
+
+                            </p>
+                            <button class="card-btn">learn more</button>
+
+                        </div>
+
+                    </div>
+                    <div class="card">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.0XMxhHtjMIWImFluHMq7dAAAAA&pid=Api&P=0&h=180"
+                            alt="">
+                        <div class="card-body">
+                            <h3 class="card-title">feature title 1</h3>
+                            <p class="card-discription">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, consectetur fuga!
+                                Autem debitis id quas at eum consequatur? Debitis mollitia odio tenetur error aliquid
+                                dolor necessitatibus iusto ducimus quam est?
+
+                            </p>
+                            <button class="card-btn">learn more</button>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </section>
         </article>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>company name</h3>
+                <p>All right reserved &copy;</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatum quod iste illo fugiat
+                    veritatis modi pariatur fugit dignissimos at repellendus, aut incidunt tempore aliquid? Obcaecati,
+                    voluptas officia? Facere, similique.</p>
+            </div>
+            <div class="website-links">
+                <a href="#">home</a>
+                <a href="#">about us</a>
+                <a href="#">contact us</a>
+                <a href="#">career with us</a>
+            </div>
+
+        </div>
+    </footer>
 </body>
+
 </html>
